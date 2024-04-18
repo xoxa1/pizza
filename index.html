@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Order Form</title>
+</head>
+
+<body>
+
+    <!-- Header section -->
+    <header>
+        <h1>Pizza Order Form</h1>
+    </header>
+
+    <!-- Main content section -->
+    <main>
+
+        <!-- Pizza Order Form -->
+        <form action="order_confirmation.html" method="post">
+
+            <!-- Personal Information -->
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+            </fieldset>
+
+            <!-- Pizza Details -->
+            <fieldset>
+                <legend>Pizza Details</legend>
+                <label for="num_pizzas">Number of Pizzas:</label>
+                <input type="number" id="num_pizzas" name="num_pizzas" min="1" required><br>
+
+                <label for="size">Size:</label>
+                <select id="size" name="size" required>
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select><br>
+
+                <label for="shape">Shape:</label>
+                <input type="radio" id="round" name="shape" value="round" checked>
+                <label for="round">Round</label>
+                <input type="radio" id="square" name="shape" value="square">
+                <label for="square">Square</label>
+            </fieldset>
+
+            <!-- Toppings -->
+            <fieldset>
+                <legend>Toppings</legend>
+                <select id="toppings" name="toppings" required>
+                    <option value="choose">choose</option>
+                    <option value="olive">olive</option>
+                    <option value="pepperoni">pepperoni</option>
+                    <option value="pinnaple">pinapple</option>
+                    <option value="beef">beef</option>
+                </select>
+
+            </fieldset>
+
+            <!-- Crust Type -->
+            <fieldset>
+                <legend>Crust Type</legend>
+                <input type="radio" id="deep_dish" name="crust" value="deep_dish" checked>
+                <label for="deep_dish">Deep Dish</label>
+                <input type="radio" id="thin_crust" name="crust" value="thin_crust">
+                <label for="thin_crust">Thin Crust</label>
+                <input type="radio" id="other_crust" name="crust" value="other_crust">
+                <label for="other_crust">Other</label>
+            </fieldset>
+
+            <!-- Delivery Options -->
+            <fieldset>
+                <legend>Delivery Options</legend>
+                <label><input type="radio" name="delivery" value="takeout" checked> Take Out</label>
+                <label><input type="radio" name="delivery" value="delivery"> Delivery</label>
+                <label><input type="radio" name="delivery" value="eat_in"> Eat In</label>
+            </fieldset>
+
+            <!-- Additional Instructions -->
+            <label for="instructions">Additional Instructions:</label>
+            <textarea id="instructions" name="instructions" rows="4" cols="50"></textarea>
+
+            <!-- Submit and Reset Buttons -->
+            <input type="submit" value="Place Order">
+            <input type="reset" value="Clear Form">
+
+        </form>
+
+        <!-- Image -->
+        <p>
+            <img src="pizaa.jpg alt="Delicious Pizza">
+        </p>
+
+    </main>
+
+    <!-- Footer section -->
+    <footer>
+        <p>&copy; 2024 Pizza Paradise</p>
+    </footer>
+
+</body>
+
+</html>
